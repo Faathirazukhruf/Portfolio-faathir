@@ -3,11 +3,13 @@ import './Portofolio.css';
 import profilePic from '../assets/ppfaathir (1).jpeg';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; // Import CSS carousel
+import { Worker, Viewer } from '@react-pdf-viewer/core';
+import '@react-pdf-viewer/core/lib/styles/index.css';
+import pdfFile from '../assets/Curriculum Vitae Faathirazukhruf.pdf';
 import img1 from "../assets/v17-m1.png";
 import img2 from "../assets/todolistfaathir.png"; 
 import img3 from "../assets/Cover Majalengkaweb.png"; 
 import img4 from "../assets/covergameberangberang.png";
-import { Mail } from 'lucide-react';
 
 const Portofolio = () => {
   const [activeSection, setActiveSection] = useState(0);
@@ -71,17 +73,20 @@ const Portofolio = () => {
   ];
 
   const sections = [
-    {
-      id: 'home',
-      backgroundColor: 'bg-blue',
-      content: (
-        <div className="content">
-          <img src={profilePic} alt="Profile" className="profile-pic" />
-          <h1 className="section-title">Faathir azukhruf</h1>
-          <p className="section-description">Fullstack Developer</p>
-        </div>
-      ),
-    },
+  {
+    id: 'home',
+    backgroundColor: 'bg-blue',
+    content: (
+      <div className="content">
+        <img src={profilePic} alt="Profile" className="profile-pic" />
+        <h1 className="section-title">Faathir azukhruf</h1>
+        <p className="section-description">Fullstack Developer</p>
+        <a href={pdfFile} download="Faathir_CV.pdf" className="download-button">
+          Download CV
+        </a>
+      </div>
+    ),
+  },
     {
       id: 'about',
       backgroundColor: 'bg-purple',
@@ -270,22 +275,26 @@ const Portofolio = () => {
   };
 
   return (
-    <>
-      <nav className="fixed top-0 left-0 right-0 z-50 px-4 py-3 bg-blue-500/30 backdrop-blur-sm">
-        <div className="max-w-7xl mx-auto flex items-center justify-between">
-          <h1 className="text-xl md:text-2xl font-bold text-white">
-            Faathirazukhruf
-          </h1>
-          
-          <button
-            onClick={handleEmailClick}
-            className="text-white hover:text-blue-200 transition-colors duration-200 flex items-center gap-2"
-            aria-label="Send email"
-          >
-            <Mail size={24} />
-          </button>
-        </div>
-      </nav>
+  <>
+    <nav className="fixed top-0 left-0 right-0 z-50 px-4 py-3">
+      <div className="max-w-7xl mx-auto flex items-center justify-between">
+        <h1 className="text-xl md:text-2xl font-bold text-white">
+          Faathirazukhruf
+        </h1>
+        
+        <button
+          onClick={handleEmailClick}
+          className="email-button text-white hover:text-blue-200 transition-colors duration-200 flex items-center gap-2"
+          aria-label="Send email"
+        >
+          <img 
+            src="https://www.google.com/gmail/about/static/images/logo-gmail.png?cache=1adba63" 
+            alt="Gmail" 
+            className="w-8 h-8"
+          />
+        </button>
+      </div>
+    </nav>
 
       <div className="portfolio">
         <div className="navigation-dots">
