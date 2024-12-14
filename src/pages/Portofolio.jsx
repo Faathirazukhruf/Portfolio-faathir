@@ -5,7 +5,7 @@ import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; // Import CSS carousel
 import { Worker, Viewer } from '@react-pdf-viewer/core';
 import '@react-pdf-viewer/core/lib/styles/index.css';
-import pdfFile from '../assets/Curriculum Vitae Faathirazukhruf.pdf';
+import pdfFile from '../assets/CV FAATHIRAZUKHRUF.pdf';
 import img1 from "../assets/v17-m1.png";
 import img2 from "../assets/todolistfaathir.png"; 
 import img3 from "../assets/Cover Majalengkaweb.png"; 
@@ -86,7 +86,7 @@ const Portofolio = () => {
         </a>
       </div>
     ),
-  },
+  }, 
     {
       id: 'about',
       backgroundColor: 'bg-purple',
