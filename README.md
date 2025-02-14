@@ -107,7 +107,7 @@ You can check the live version of my portfolio [here](https://faathir-portfolio.
 ## 🤝 Let's Connect!
 
 - **Email**: "muhammadfaathir004@gmail.com"
-- **WhatsApp**: +62 812 3456 7890
+- **WhatsApp**: +6283148486316
 - **Instagram**: [@faathirazukhruf](https://instagram.com/faathirazukhruf)
 - **LinkedIn**: [Faathir Azukhruf](https://linkedin.com/in/faathirazukhruf)
 
