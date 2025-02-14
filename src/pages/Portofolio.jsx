@@ -5,7 +5,7 @@ import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; // Import CSS carousel
 import { Worker, Viewer } from '@react-pdf-viewer/core';
 import '@react-pdf-viewer/core/lib/styles/index.css';
-import pdfFile from '../assets/Curriculum Vitae Faathirazukhruf.pdf';
+import pdfFile from '../assets/CV FAATHIRAZUKHRUF.pdf';
 import img1 from "../assets/v17-m1.png";
 import img2 from "../assets/todolistfaathir.png"; 
 import img3 from "../assets/Cover Majalengkaweb.png"; 
@@ -68,7 +68,15 @@ const Portofolio = () => {
     },
     {
       name: 'MySQL',
-      logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg'
+      logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg'   
+    },
+    {
+      name: 'PostgreSQL',
+      logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg'
+    },
+    {
+      name: 'Postman',
+      logo: 'https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg' 
     }
   ];
 
@@ -95,7 +103,7 @@ const Portofolio = () => {
           <h1 className="section-about">About Me</h1>
           <div className="columns"> 
             <div className="column left-column">
-              <p>I am a passionate Fullstack Developer with expertise in JavaScript, Python, HTML, CSS, and a variety of programming frameworks such as React.js, Node.js, Bootstrap, Tailwind, MySQL, and Next.js. Additionally, I am proficient in operating Linux. My enthusiasm for technology has led me to explore fields like AI, machine learning, deep learning, blockchain, and cybersecurity, with a particular focus on backend development and data management. However, I also have strong frontend skills, particularly with React.js and other frontend frameworks.</p>
+              <p>I am a passionate Fullstack Developer with expertise in JavaScript, Python, HTML, CSS, and a variety of programming frameworks or tolls such as React.js, Express.js, IBM loopback, Node.js, Bootstrap, Tailwind, PostgreSql, MySQL, and Postman. Additionally, I am proficient in operating Linux. My enthusiasm for technology has led me to explore fields like AI, machine learning, deep learning, blockchain, and cybersecurity, with a particular focus on backend development and data management. However, I also have strong frontend skills, particularly with React.js and other frontend frameworks.</p>
             </div>
             <div className="column right-column">
               <p>I am always eager to learn and explore new technologies because I believe the future is shaped by innovation. I'm adaptable and open to continuous learning, yet I remain focused and diligent in my work. Having completed numerous projects, I am confident in my ability to contribute effectively in various roles. And I am also a graduate of Harisenin.com, a Fullstack Developer bootcamp and one of the top bootcamps in Indonesia.</p>

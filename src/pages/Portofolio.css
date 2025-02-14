@@ -1,16 +1,20 @@
 /* Portfolio.css */
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
-  overflow: hidden;
   font-family: 'Arial', sans-serif;
+  overflow-x: hidden; /* Hanya sembunyikan overflow horizontal */
 }
 
 .portfolio {
   position: relative;
   width: 100%;
-  height: 100vh;
-  overflow: hidden;
+  min-height: 100vh;
+  overflow-y: auto; /* Izinkan scroll vertikal */
 }
 
 .profile-pic {
@@ -48,10 +52,9 @@ body {
 }
 
 .sections {
-  scroll-snap-type: y mandatory;
-  overflow-y: scroll;
+  scroll-snap-type: y proximity; /* Scroll lebih responsif */
+  overflow-y: auto; /* Izinkan scroll vertikal */
   height: 100vh;
-  scroll-behavior: smooth;
 }
 
 .section {
@@ -66,19 +69,19 @@ body {
 }
 
 .bg-blue {
-  background-color: #1E3A8A;
+  background: linear-gradient(135deg, #1b5988, #070707);
 }
 
 .bg-purple {
-  background-color: #6D28D9;
+  background: linear-gradient(135deg, #1b5988, #070707);
 }
 
 .bg-green {
-  background-color: #059669;
+  background: linear-gradient(135deg, #1b5988, #070707);
 }
 
 .bg-red {
-  background-color: #DC2626;
+  background: linear-gradient(135deg, #1b5988, #070707);
 }
 
 .content {
@@ -316,21 +319,4 @@ nav h1 {
 
 .dot.active {
   background-color: rgba(255, 255, 255, 1);
-}
-
-/* Background colors for each section */
-.bg-blue {
- background: linear-gradient(135deg, #1b5988, #070707);
-}
-
-.bg-purple {
-  background: linear-gradient(135deg, #1b5988, #070707);
-}
-
-.bg-green {
-  background: linear-gradient(135deg, #1b5988, #070707);
-}
-
-.bg-red {
-  background: linear-gradient(135deg, #1b5988, #070707);
 }
