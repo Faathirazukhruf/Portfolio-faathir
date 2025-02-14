@@ -94,7 +94,7 @@ const Portofolio = () => {
         </a>
       </div>
     ),
-  },
+  }, 
     {
       id: 'about',
       backgroundColor: 'bg-purple',
