@@ -1,6 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
-import 'react-pdf/dist/esm/Page/TextLayer.css';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import profilePic from '../assets/ppfaathir (1).jpeg';
