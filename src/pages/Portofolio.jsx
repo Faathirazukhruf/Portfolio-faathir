@@ -201,7 +201,7 @@ const Portfolio = () => {
               </p>
               <div className="Skills">
                 <h1 className="section-title">Skills</h1>
-                <p className="section-description">Check out my programming skills.</p>
+                <p className="section-description">Check out my programming skills:</p>
                 <div className="skills-grid">
                   {skills.map((skill) => (
                     <div key={skill.name} className="skill-item">
