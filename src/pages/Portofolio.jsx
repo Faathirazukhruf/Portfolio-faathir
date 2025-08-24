@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import profilePic from '../assets/ppfaathir (1).jpeg';
-import pdfFile from '../assets/CV-FsdFaathirazukhruf.pdf';
+import pdfFile from '../assets/CVFaathirazukhruffsd.pdf';
 import './Portofolio.css';
 import img1 from "../assets/v17-m1.png";
 import img2 from "../assets/web3 (1).png";
