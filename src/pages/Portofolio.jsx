@@ -5,6 +5,7 @@ import About from '../components/About';
 import Projects from '../components/Projects';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
+import FaathirAI from '../components/FaathirAI';
 
 const Portfolio = () => {
   const [activeSection, setActiveSection] = useState('home');
@@ -37,6 +38,7 @@ const Portfolio = () => {
       <Projects />
       <Contact />
       <Footer />
+      <FaathirAI />
     </div>
   );
 };

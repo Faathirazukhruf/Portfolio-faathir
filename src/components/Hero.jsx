@@ -21,7 +21,7 @@ const Hero = () => {
                     className="flex-1 text-center md:text-left"
                 >
                     <div className="inline-block px-4 py-2 mb-4 rounded-full bg-white/5 border border-white/10 backdrop-blur-sm">
-                        <span className="text-secondary font-mono text-sm">Fullstack Dev & AI Automation</span>
+                        <span className="text-secondary font-mono text-sm">Fullstack Dev & AI Engineer</span>
                     </div>
 
                     {/* Mobile Profile Picture (Visible only on mobile) */}
@@ -48,7 +48,7 @@ const Hero = () => {
                         <span className="text-gradient">Faathir Azukhruf</span>
                     </h1>
                     <p className="text-gray-400 text-lg mb-8 max-w-2xl mx-auto md:mx-0 leading-relaxed">
-                        Architecting intelligent digital solutions. I bridge the gap between robust fullstack engineering and cutting-edge AI automation to build the future of web.
+                        Architecting intelligent digital solutions. I bridge the gap between robust fullstack engineering and cutting-edge AI automation to build the future of web and app.
                     </p>
 
                     <div className="flex flex-wrap justify-center md:justify-start gap-4">
