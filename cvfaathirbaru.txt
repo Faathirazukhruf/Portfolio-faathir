@@ -1,0 +1,133 @@
+MOCHAMAD FAATHIR AZUKHRUF SISWANDI
++62 831 4848 6316 | muhammadfaathir004@gmail.com Portfolio: https://portfolio-faathir.vercel.app
+LinkedIn: linkedin.com/in/faathirazukhruf | GitHub: github.com/Faathirazukhruf
+PROFESSIONAL SUMMARY
+Full Stack Developer and AI Automation Engineer with hands-on experience building business systems, ERP platforms, workflow
+automations, AI-powered assistants, and operational tools for manufacturing and startup environments.
+Experienced in developing scalable web applications using Next.js, React.js, Node.js, Express.js, TypeScript, PostgreSQL, and MySQL while
+integrating AI technologies such as OpenAI, Gemini, Claude, n8n, and conversational AI systems to solve real business problems.
+Currently working as an IT programmer at PT Dipa Pharmalab Intersains, where I design and develop internal manufacturing systems, AIpowered assistants, operational dashboards, notification systems, and workflow automations that support daily business operations across
+departments.
+Passionate about building AI-first products, intelligent automation systems, and software that improves efficiency, decision making, and
+operational visibility. Strong problem-solving mindset with experience translating real-world business challenges into practical technical
+solutions.
+PROFESSIONAL EXPERIENCE
+IT Programmer
+PT Dipa Pharmalab Intersains — Majalengka, Indonesia | August 2025 – Present
+ Design and develop internal manufacturing systems used across operational departments.
+ Build ERP modules, operational dashboards, reporting systems, and production management tools.
+ Develop AI-powered assistants integrated with company workflows and internal business data.
+ Create automation workflows using n8n to reduce repetitive manual tasks and improve operational efficiency.
+ Integrate notifications, reporting systems, and approval workflows through automated processes.
+ Analyze operational problems directly with end users and convert business requirements into software solutions.
+ Support system architecture planning, database design, deployment, maintenance, and infrastructure improvements.
+ Collaborate with management and operational teams to optimize manufacturing workflows through technology.
+Full Stack Developer & AI Automation Engineer
+Criova — Remote | January 2026 – Present
+ Build AI-powered business systems, automation platforms, and operational tools for internal company usage.
+ Design and develop AI-assisted ERP workflows and intelligent business automation solutions.
+ Develop integrations between AI services, workflow engines, databases, and operational platforms.
+ Build conversational AI experiences and AI agents for operational support and business productivity.
+ Implement automation pipelines using Hermes agent, n8n, and modern AI APIs.
+ Participate in product architecture, feature planning, and AI integration strategy.
+Full Stack Web3 Developer
+Tabriiz — Remote | May 2025 – August 2025
+ Contributed to a Web3 crowdfunding platform focused on tokenization of real-world Islamic projects.
+ Developed smart contracts using Solidity.
+ Integrated Web3.js, Ethers.js, Wagmi, and RainbowKit.
+ Built blockchain-connected features using Next.js and Node.js.
+ Participated in frontend and backend development of decentralized application features.
+Full Stack Developer
+CMLabs — Remote | March 2025 – May 2025
+ Developed internal SEO and analytics tools using Laravel, React.js, PostgreSQL, and MySQL.
+ Participated in full software development lifecycle from planning to deployment.
+ Worked closely with product and development teams to build scalable internal solutions.
+ Contributed to both frontend and backend development.
+Web Developer Intern
+GAOTek Inc. — Remote | February 2025 – April 2025
+ Developed and maintained WordPress websites for international clients.
+ Improved frontend user experience and website responsiveness.
+ Worked with PHP, HTML, CSS, JavaScript, and WordPress customization.
+PROJECTS
+Dipa Core — Manufacturing ERP System
+Internal manufacturing management platform developed for PT Dipa Pharmalab Intersains.
+ Production management
+ Operational dashboards
+ Reporting system
+ Inventory workflows
+ Internal approval processes
+ Department management
+ Manufacturing data management
+Tech Stack: Next.js, TypeScript, Laravel, Redis, REST API, MySQL
+Dipa AI — Manufacturing AI Assistant
+AI-powered assistant designed to help manufacturing operations by utilizing company operational data.
+ Internal knowledge assistant
+ Manufacturing information retrieval
+ AI-assisted reporting
+ Automated notifications
+ Workflow automation
+ Integration with operational systems
+Tech Stack: Gemini API, n8n, Next.js, MySQL, Laravel, Webhook, Fonte WhatsApp integration
+Criova ERP
+AI-powered ERP business platform focused on automation, operational efficiency, and intelligent workflow systems.
+ Full-stack development
+ AI integration
+ Workflow automation
+ Business process optimization
+ System architecture planning
+Tech Stack: Next.js, TypeScript, Nest.js, PostgreSQL, n8n, Hermes agent, AI APIs | Link: criova.id
+Criova Krayo AI Chatbot
+AI-powered customer service and booking automation platform for service businesses.
+ Customer onboarding automation
+ Booking workflows
+ WhatsApp-based interaction flow
+ AI-assisted customer support
+ Automated follow-up systems
+Tech Stack: Nest.js, n8n, AI APIs, PostgreSQL, Next.js | Link: https://criova.id/cuci-ac
+KIRO — Personal AI Operating System
+AI-powered life operating system designed to help users understand, optimize, and improve their lives through intelligent analysis and
+behavioral tracking.
+ Daily journaling and reflection
+ Habit tracking
+ Productivity analytics
+ Financial tracking
+ Burnout detection
+ Goal management
+ AI-generated insights and recommendations
+ Life analytics dashboard
+Tech Stack: Next.js, TypeScript, PostgreSQL, Prisma, Gemini API, TailwindCSS
+Web3 Analysis Dashboard
+AI-powered Web3 analytics dashboard with blockchain integrations.
+ MetaMask authentication
+ Cryptocurrency tracking
+ AI-generated market insights
+ Portfolio monitoring
+ Web3 integrations
+Tech Stack: Next.js, Solidity, Web3.js, Ethers.js | Link: https://web3-analysis-dashboard.vercel.app/
+EDUCATION
+SMK Ilman Nafiah — Cirebon, Indonesia
+Computer and Network Engineering | July 2020 – May 2023
+CERTIFICATIONS
+Harisenin.com — Full Stack Web Developer Bootcamp
+August 2024 – December 2024
+Tech Stack: HTML, CSS, JavaScript, React.js, Node.js, Express.js, Next.js
+Certificate: bit.ly/FaathirFSDBATCH13HARISENINCERTIFICATE
+Coding Studio — Fundamental Cyber Security
+June 2024
+Certificate: member.codingstudio.id/certificate/77F14E6635-77F13ED4A6-77E570D3D8
+SKILLS
+AI & Automation
+AI Integration, OpenAI API, Gemini API, Claude, Prompt Engineering, Conversational AI, AI Assistants, Workflow Automation, Hermes agent
+and n8n, Business Process Automation
+Backend Development
+Node.js, Express.js, NestJS, Laravel, REST API Development, PostgreSQL, MySQL, Prisma
+Frontend Development
+React.js, Next.js, TypeScript, JavaScript, HTML, CSS, TailwindCSS, Shadcn UI
+DevOps & Infrastructure
+Docker, Linux, VPS Deployment, Git, GitHub, Postman, Vercel
+Blockchain & Web3
+Solidity, Web3.js, Ethers.js, Wagmi, RainbowKit, MetaMask Integration
+Other
+System Design, ERP Development, Business Analysis, Technical Documentation, Problem Solving
+Languages
+Bahasa Indonesia (Native), English (Professional Working Proficiency)
