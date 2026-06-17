@@ -1,6 +1,7 @@
 'use client';
 import { motion } from 'framer-motion';
 import { useLanguage } from '../LanguageContext';
+import Image from 'next/image';
 
 const projects = [
   {
@@ -15,6 +16,7 @@ const projects = [
     type: 'ERP_SYSTEM',
     accentColor: '#001EFF',
     internal: true,
+    image: '/neo_brutal_dipa_core.png',
   },
   {
     id: 'dipa-ai',
@@ -28,6 +30,7 @@ const projects = [
     type: 'AI_ASSISTANT',
     accentColor: '#00FF41',
     internal: true,
+    image: '/neo_brutal_dipa_ai.png',
   },
   {
     id: 'criova-erp',
@@ -42,6 +45,7 @@ const projects = [
     accentColor: '#001EFF',
     link: 'https://criova.id',
     internal: false,
+    image: 'https://image.thum.io/get/width/600/crop/800/https://criova.id',
   },
   {
     id: 'criova-krayo',
@@ -56,6 +60,7 @@ const projects = [
     accentColor: '#7C3AED',
     link: 'https://criova.id/cuci-ac',
     internal: false,
+    image: 'https://image.thum.io/get/width/600/crop/800/https://criova.id/cuci-ac',
   },
   {
     id: 'kiro',
@@ -69,6 +74,7 @@ const projects = [
     type: 'LIFE_OS',
     accentColor: '#7C3AED',
     internal: false,
+    image: '/neo_brutal_kiro.png',
   },
   {
     id: 'web3-dashboard',
@@ -83,6 +89,7 @@ const projects = [
     accentColor: '#F97316',
     link: 'https://web3-analysis-dashboard.vercel.app/',
     internal: false,
+    image: 'https://image.thum.io/get/width/600/crop/800/https://web3-analysis-dashboard.vercel.app/',
   },
 ];
 
@@ -145,6 +152,25 @@ function ProjectCard({ project, index, tProject }) {
             </span>
           )}
         </div>
+
+        {/* Project Image Placeholder */}
+        {project.image && (
+          <div 
+            className="w-full h-40 sm:h-48 relative mb-6 rounded-sm overflow-hidden border border-white/20 transition-transform duration-300 group-hover:-translate-y-1 group-hover:-translate-x-1"
+            style={{ 
+              boxShadow: `4px 4px 0px 0px ${project.accentColor}90` 
+            }}
+          >
+            <Image 
+              src={project.image} 
+              alt={project.title} 
+              fill 
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              priority={index <= 1}
+            />
+          </div>
+        )}
 
         <p className="font-mono text-xs text-muted leading-relaxed mb-5">{tProject.description}</p>
 
