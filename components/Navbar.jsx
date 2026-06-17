@@ -1,6 +1,6 @@
 'use client';
 import { useState, useEffect } from 'react';
-import { motion, useScroll } from 'framer-motion';
+import { motion, useScroll, AnimatePresence } from 'framer-motion';
 import { useLanguage } from './LanguageContext';
 
 const navKeys = [
@@ -13,6 +13,7 @@ const navKeys = [
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
   const { lang, setLang, t } = useLanguage();
 
   const { scrollY } = useScroll();
@@ -76,11 +77,55 @@ export default function Navbar() {
         </div>
 
         {/* Mobile menu indicator */}
-        <div className="md:hidden flex flex-col gap-1">
-          <div className="w-5 h-[1px] bg-text" />
-          <div className="w-3 h-[1px] bg-primary" />
-        </div>
+        <button 
+          className="md:hidden flex flex-col gap-1.5 p-2 z-50"
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          <div className={`h-[1px] transition-all duration-300 ${isOpen ? 'w-5 rotate-45 translate-y-[3.5px] bg-primary' : 'w-5 bg-text'}`} />
+          <div className={`h-[1px] transition-all duration-300 ${isOpen ? 'w-5 -rotate-45 -translate-y-[3.5px] bg-primary' : 'w-3 bg-primary'}`} />
+        </button>
       </div>
+
+      {/* Mobile Menu Overlay */}
+      <AnimatePresence>
+        {isOpen && (
+          <motion.div
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: 'auto' }}
+            exit={{ opacity: 0, height: 0 }}
+            className="md:hidden bg-background/95 backdrop-blur-xl border-b border-white/5 overflow-hidden"
+          >
+            <nav className="flex flex-col p-6 gap-6">
+              {navKeys.map((link) => (
+                <a
+                  key={link.key}
+                  href={link.href}
+                  onClick={() => setIsOpen(false)}
+                  className="font-mono text-xs tracking-[0.25em] text-muted hover:text-primary transition-colors duration-300"
+                >
+                  {t.nav[link.key]}
+                </a>
+              ))}
+              
+              <div className="flex items-center gap-4 mt-4 pt-4 border-t border-white/5">
+                <span className="font-mono text-[10px] tracking-widest text-muted uppercase">Lang:</span>
+                <button
+                  onClick={() => { setLang('id'); setIsOpen(false); }}
+                  className={`px-3 py-1.5 font-mono text-[10px] tracking-widest rounded transition-colors duration-300 ${lang === 'id' ? 'bg-primary text-white' : 'text-muted hover:text-white border border-white/10'}`}
+                >
+                  ID
+                </button>
+                <button
+                  onClick={() => { setLang('en'); setIsOpen(false); }}
+                  className={`px-3 py-1.5 font-mono text-[10px] tracking-widest rounded transition-colors duration-300 ${lang === 'en' ? 'bg-primary text-white' : 'text-muted hover:text-white border border-white/10'}`}
+                >
+                  EN
+                </button>
+              </div>
+            </nav>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </motion.header>
   );
 }

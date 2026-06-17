@@ -95,7 +95,7 @@ export default function ContactSection() {
                 transition={{ duration: 0.5, delay: i * 0.1 }}
                 className="flex items-center justify-between glass-panel px-6 py-5 group hover:scale-[1.01] transition-transform duration-300"
               >
-                <div className="flex items-center gap-4">
+                <div className="flex items-center gap-4 min-w-0">
                   {/* Icon */}
                   <div
                     className="w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0 transition-colors duration-300"
@@ -107,18 +107,18 @@ export default function ContactSection() {
                   >
                     {link.icon}
                   </div>
-                  <div>
-                    <p className="font-mono text-[9px] tracking-widest mb-0.5" style={{ color: link.color }}>
+                  <div className="min-w-0">
+                    <p className="font-mono text-[9px] tracking-widest mb-0.5 truncate" style={{ color: link.color }}>
                       {link.label}
                     </p>
-                    <p className="font-mono text-sm text-text group-hover:text-white transition-colors">
+                    <p className="font-mono text-[11px] md:text-sm text-text group-hover:text-white transition-colors truncate">
                       {link.value}
                     </p>
                   </div>
                 </div>
                 {/* Arrow */}
                 <span
-                  className="font-mono text-xl group-hover:translate-x-1.5 transition-transform duration-300"
+                  className="font-mono text-xl group-hover:translate-x-1.5 transition-transform duration-300 flex-shrink-0"
                   style={{ color: link.color }}
                 >
                   →
@@ -142,21 +142,21 @@ export default function ContactSection() {
                 <span className="font-mono text-[9px] text-muted tracking-widest">{t.contact.currentStatus}</span>
               </div>
               <div className="space-y-3">
-                <div className="flex justify-between items-center">
-                  <span className="font-mono text-xs text-muted">{t.contact.position}</span>
-                  <span className="font-mono text-xs text-cyber">{t.contact.positionValue}</span>
+                <div className="flex flex-col sm:flex-row sm:justify-between items-start sm:items-center gap-1 sm:gap-4">
+                  <span className="font-mono text-xs text-muted flex-shrink-0">{t.contact.position}</span>
+                  <span className="font-mono text-xs text-cyber sm:text-right">{t.contact.positionValue}</span>
                 </div>
-                <div className="flex justify-between items-center">
-                  <span className="font-mono text-xs text-muted">{t.contact.location}</span>
-                  <span className="font-mono text-xs text-text">{t.contact.locationValue}</span>
+                <div className="flex flex-col sm:flex-row sm:justify-between items-start sm:items-center gap-1 sm:gap-4">
+                  <span className="font-mono text-xs text-muted flex-shrink-0">{t.contact.location}</span>
+                  <span className="font-mono text-xs text-text sm:text-right">{t.contact.locationValue}</span>
                 </div>
-                <div className="flex justify-between items-center">
-                  <span className="font-mono text-xs text-muted">{t.contact.workType}</span>
-                  <span className="font-mono text-xs text-text">{t.contact.workTypeValue}</span>
+                <div className="flex flex-col sm:flex-row sm:justify-between items-start sm:items-center gap-1 sm:gap-4">
+                  <span className="font-mono text-xs text-muted flex-shrink-0">{t.contact.workType}</span>
+                  <span className="font-mono text-xs text-text sm:text-right">{t.contact.workTypeValue}</span>
                 </div>
-                <div className="flex justify-between items-center">
-                  <span className="font-mono text-xs text-muted">{t.contact.expertise}</span>
-                  <span className="font-mono text-xs text-primary">{t.contact.expertiseValue}</span>
+                <div className="flex flex-col sm:flex-row sm:justify-between items-start sm:items-center gap-1 sm:gap-4">
+                  <span className="font-mono text-xs text-muted flex-shrink-0">{t.contact.expertise}</span>
+                  <span className="font-mono text-xs text-primary sm:text-right">{t.contact.expertiseValue}</span>
                 </div>
               </div>
             </motion.div>

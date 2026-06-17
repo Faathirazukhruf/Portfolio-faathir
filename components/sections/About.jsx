@@ -1,6 +1,7 @@
 'use client';
 import { motion } from 'framer-motion';
 import { useLanguage } from '../LanguageContext';
+import Image from 'next/image';
 
 const certifications = [
   {
@@ -26,26 +27,26 @@ export default function AboutSection() {
   return (
     <section id="about" className="relative py-24">
       <div className="max-w-7xl mx-auto px-6">
-        {/* Header */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.7 }}
-          className="mb-20"
-        >
-          <p className="font-mono text-[10px] tracking-[0.4em] text-primary uppercase mb-4">{t.about.tag}</p>
-          <h2 className="font-serif text-5xl md:text-6xl font-black text-text leading-none">
-            {t.about.title1}<br />
-            <span style={{ WebkitTextStroke: '1px rgba(255,255,255,0.2)', color: 'transparent' }}>
-              {t.about.title2}
-            </span>
-          </h2>
-        </motion.div>
-
         <div className="grid lg:grid-cols-2 gap-16 items-start">
-          {/* Left: Summary */}
+          {/* Left: Header & Summary */}
           <div>
+            {/* Header */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.7 }}
+              className="mb-12 lg:mb-16"
+            >
+              <p className="font-mono text-[10px] tracking-[0.4em] text-primary uppercase mb-4">{t.about.tag}</p>
+              <h2 className="font-serif text-5xl md:text-6xl font-black text-text leading-none">
+                {t.about.title1}<br />
+                <span style={{ WebkitTextStroke: '1px rgba(255,255,255,0.2)', color: 'transparent' }}>
+                  {t.about.title2}
+                </span>
+              </h2>
+            </motion.div>
+
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -92,8 +93,28 @@ export default function AboutSection() {
             */}
           </div>
 
-          {/* Right: Certifications */}
+          {/* Right: Photo & Certifications */}
           <div>
+            {/* Photo */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="mb-12 relative w-full aspect-video md:aspect-square max-w-sm mx-auto lg:mx-0 rounded-2xl overflow-hidden glass-panel flex items-center justify-center p-4"
+            >
+              <div className="relative w-full h-full">
+                <Image 
+                  src="/Faathiranime.png" 
+                  alt="Faathir Animation" 
+                  fill 
+                  className="object-contain"
+                  sizes="(max-width: 768px) 100vw, 384px"
+                />
+              </div>
+            </motion.div>
+
+            {/* Certifications */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}

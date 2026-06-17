@@ -29,6 +29,9 @@ export const metadata = {
     url: 'https://portfolio-faathir.vercel.app',
     siteName: 'Faathir Portfolio',
   },
+  icons: {
+    icon: '/Faathiranime.png',
+  },
 };
 
 export default function RootLayout({ children }) {

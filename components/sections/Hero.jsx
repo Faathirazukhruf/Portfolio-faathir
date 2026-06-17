@@ -156,7 +156,7 @@ export default function HeroSection() {
           {/* ── Right: Profile Photo + Widgets ── */}
           <div className="relative flex items-center justify-center h-[520px] mt-12 lg:mt-0">
             {/* Floating widgets */}
-            <TerminalWidget className="hidden md:block absolute top-0 left-0 rotate-[-2deg] z-10" />
+            <TerminalWidget className="absolute -top-16 left-0 md:top-0 md:left-0 rotate-[-2deg] z-10 scale-75 md:scale-100 origin-top-left" />
             <MetricsWidget className="hidden md:block absolute bottom-4 right-0 rotate-[2deg] z-10" />
 
             {/* Dashed connection lines SVG */}
@@ -199,6 +199,8 @@ export default function HeroSection() {
                   fill
                   className="object-cover"
                   priority
+                  quality={100}
+                  sizes="(max-width: 768px) 100vw, 256px"
                 />
                 {/* Subtle cyber gradient overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/20 via-transparent to-transparent" />
