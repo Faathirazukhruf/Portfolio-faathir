@@ -113,7 +113,7 @@ export default function HeroSection() {
               </a>
               {/* Download CV */}
               <a
-                href="/CVFAATHIRFULLSTACKAIDEV.pdf"
+                href="/CV_FAATHIRAZUKHRUF_FULLSTACKAIENGINEER.pdf"
                 download
                 className="group flex items-center gap-2 px-6 py-3 border border-cyber/50 text-cyber font-mono text-xs tracking-widest uppercase hover:bg-cyber/10 transition-all duration-300"
               >
